@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05659e6b-3069-4df3-81cb-f96dc3c34207" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YosC4mTTI2Khjp3MiuHnSRJIMN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OnlineLearning\formationsPC\Python 4\Développez votre site web avec le framework Django\crepes_bretonnes" />
+      <recent name="C:\OnlineLearning\formationsPC\Python 4\Développez votre site web avec le framework Django\crepes_bretonnes\blog\templates\blog" />
+      <recent name="C:\OnlineLearning\formationsPC\Python 4\Développez votre site web avec le framework Django\crepes_bretonnes\blog" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05659e6b-3069-4df3-81cb-f96dc3c34207" name="Default Changelist" comment="" />
+      <created>1583620151469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583620151469</updated>
+      <workItem from="1583620154478" duration="2810000" />
+      <workItem from="1583759019188" duration="5120000" />
+      <workItem from="1584008301922" duration="7923000" />
+      <workItem from="1584362775841" duration="2566000" />
+      <workItem from="1584380311205" duration="23475000" />
+      <workItem from="1584552563790" duration="3275000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584384472153">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.40.1366.728@0.40.1366.728" timestamp="1584384472153" />
+    <state x="24" y="46" width="1342" height="715" key="SettingsEditor" timestamp="1583620464196">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="24" y="46" width="1342" height="715" key="SettingsEditor/0.40.1366.728@0.40.1366.728" timestamp="1583620464196" />
+  </component>
+</project>
