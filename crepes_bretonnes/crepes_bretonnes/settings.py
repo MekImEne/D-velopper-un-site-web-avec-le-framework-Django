@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog', # Pour que Django considère le sous-dossier blog comme une application
+    'mini_url',
 ]
 
 MIDDLEWARE = [

@@ -14,5 +14,5 @@ urlpatterns= [
     path('article/<int:id>-<slug:slug>$', views.lire, name='lire'),
     url('contact/', views.contact, name='contact'),
     url('contact2/', views.nouveau_contact, name='contact2'),
-    static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
+    #static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]

@@ -1,8 +1,8 @@
 from django.db import models
 from django.utils import timezone
-from django.contrib import admin
+#from django.contrib import admin
 
-from crepes_bretonnes.blog.views import renommage
+#from .views import renommage
 
 
 class Categorie(models.Model):
@@ -78,6 +78,6 @@ class Contact(models.Model):
         return self.nom
 
 
-class Document(models.Model):
-    nom = models.CharField(max_length=100)
-    doc = models.FileField(upload_to=renommage, verbose_name="Document")
+#class Document(models.Model):
+   # nom = models.CharField(max_length=100)
+   # doc = models.FileField(upload_to=renommage, verbose_name="Document")

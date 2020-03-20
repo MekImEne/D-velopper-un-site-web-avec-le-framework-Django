@@ -14,6 +14,7 @@
 
 <p>
     <form method="post" enctype="multipart/form-data" action="{% url 'blog:contact2' %}">
+       <!-- C’est un champ de formulaire caché qui permet de protéger les utilisateurs de la soumission de formulaire non voulu, via un site malicieux.     -->
        {% csrf_token %}
        {{ form.as_p }}
        <input type="submit"/>
