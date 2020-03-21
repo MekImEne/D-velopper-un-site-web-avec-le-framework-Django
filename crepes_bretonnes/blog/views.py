@@ -2,11 +2,13 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.http  import  HttpResponse, Http404
 from datetime import datetime
 from django.shortcuts import render
-#from .models import Article, Contact
+from .models import Article, Contact, Categorie
 from .forms import ContactForm, NouveauContactForm
 
+from django.views.generic import TemplateView, ListView, DetailView
 
-# Create your views here.
+from datetime import datetime
+
 
 def home(request):
     """ Exemple de page non valide au niveau HTML pour que l'exemple soit concis """
@@ -57,19 +59,18 @@ def addition(request, nombre1, nombre2):
     return render(request, 'blog/addition.html', locals())
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+"""
 def accueil(request):
-    """ Afficher tous les articles de notre blog """
+    #Afficher tous les articles de notre blog
     articles =Article.objects.all() # Nous sélectionnons tous nos articles
     return render(request, 'blog/accueil.html', {'derniers_articles': articles})
+"""
 
 def lire(request, id, slug):
     article = get_object_or_404(Article, id=id, slug=slug)
     return render(request, 'blog/lire.html', {'article':article})
 
-
-
-
+"""
 def contact(request):
     # Construire le formulaire, soit avec les données postées,
     # soit vide si l'utilisateur accède pour la première fois
@@ -91,6 +92,17 @@ def contact(request):
 
     # Quoiqu'il arrive, on affiche la page du formulaire.
     return render(request, 'blog/contact.html', locals())
+"""
+
+
+def accueil(request):
+    date_actuelle = datetime.now()
+    # […] Récupération d'autres données (exemple : une liste de news)
+    return render(request, 'accueil.html', locals())
+
+def contact(request):
+    return render(request, 'contact.html', {'date_actuelle': datetime.now()})
+
 
 def nouveau_contact(request):
     sauvegarde = False
@@ -119,3 +131,75 @@ def voir_contacts(request):
 
 def renommage(instance, nom_fichier):
     return "{}-{}".format(instance.id, nom_fichier)
+
+"""
+Les vues génériques
+"""
+
+def faq(request):
+    return render(request, 'blog/faq.html', {})
+
+"""
+class FAQView(TemplateView):
+   template_name = "blog/faq.html"  # chemin vers le template à afficher
+"""
+class ListeArticles(ListView):
+    model = Article
+    context_object_name = "derniers_articles"
+    template_name = "blog/accueil.html"
+    paginate_by = 5
+    #queryset = Article.objects.filter(categorie__id=1) #seuls les articles de la première catégorie créée seront affichés
+
+    def get_queryset(self):
+        return Article.objects.filter(categorie__id=self.kwargs['id'])
+
+    def get_context_data(self, **kwargs):
+        # Nous récupérons le contexte depuis la super-classe
+        context = super(ListeArticles, self).get_context_data(**kwargs)
+        # Nous ajoutons la liste des catégories, sans filtre particulier
+        context['categories'] = Categorie.objects.all()
+        return context
+
+
+class LireArticle(DetailView):
+    context_object_name = "article"
+    model = Article
+    template_name = "blog/lire.html"
+
+    def get_object(self):
+        # Nous récupérons l'objet, via la super-classe
+        article = super(LireArticle, self).get_object()
+
+        article.nb_vues += 1  # Imaginons un attribut « Nombre de vues »
+        article.save()
+
+        return article  # Et nous retournons l'objet à afficher
+
+
+
+#les middlewares
+
+
+def middleware1(get_response):
+    def middleware(request):
+        print("J'ouvre le bal de la requête")
+        response = get_response(request)
+        print("Et je clôture également le show.")
+        return response
+
+    return middleware
+
+
+def middleware2(get_response):
+    def middleware(request):
+        print("J'englobe également la vue, mais après")
+        response = get_response(request)
+        print("Compris ?")
+        return response
+
+    return middleware
+
+
+def ma_vue(request):
+    print("Enfin, nous arrivons dans la vue !")
+    return HttpResponse("Ma réponse")

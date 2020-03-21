@@ -2,19 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05659e6b-3069-4df3-81cb-f96dc3c34207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/liste.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/nouveau.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0007_article2_image_lieu_restaurant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0008_restoproxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0009_commentaire_cours_eleve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0010_crepe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templatetags/blog_extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/context_processors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/supprimer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/stats/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/migrations/0002_cours.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/testAdvancedModel/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/contact2.html" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/contact2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/accueil.html" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/accueil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/liste.html" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/liste.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/nouveau.html" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/nouveau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +64,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,13 +73,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YosC4mTTI2Khjp3MiuHnSRJIMN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -84,12 +113,18 @@
       <workItem from="1584362775841" duration="2566000" />
       <workItem from="1584380311205" duration="23475000" />
       <workItem from="1584552563790" duration="5003000" />
-      <workItem from="1584723963496" duration="1968000" />
+      <workItem from="1584723963496" duration="7661000" />
+      <workItem from="1584732967518" duration="355000" />
+      <workItem from="1584733350048" duration="9875000" />
+      <workItem from="1584799167223" duration="11100000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584384472153">
@@ -100,5 +135,9 @@
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="24" y="46" width="1342" height="715" key="SettingsEditor/0.40.1366.728@0.40.1366.728" timestamp="1583620464196" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584810348005">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.40.1366.728@0.40.1366.728" timestamp="1584810348005" />
   </component>
 </project>

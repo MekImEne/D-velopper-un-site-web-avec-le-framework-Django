@@ -3,6 +3,7 @@ import random
 import string
 
 
+
 class MiniURL(models.Model):
     url = models.URLField(verbose_name="URL à réduire", unique=True)
     code = models.CharField(max_length=6, unique=True)
@@ -30,3 +31,4 @@ class MiniURL(models.Model):
     class Meta:
         verbose_name = "Mini URL"
         verbose_name_plural = "Minis URL"
+

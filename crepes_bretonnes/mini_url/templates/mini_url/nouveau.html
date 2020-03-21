@@ -7,11 +7,12 @@
 <body>
     <h1>Raccourcir une URL</h1>
 
-<form method="post" action="{% url 'mini_url:url_nouveau' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit"/>
-</form>
+<!-- <form method="post" action="{% url 'mini_url:url_nouveau' %}">-->
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit"/>
+    </form>
 
 </body>
 </html>
