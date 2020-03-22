@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05659e6b-3069-4df3-81cb-f96dc3c34207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0011_profil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0012_delete_profil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0013_profil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/migrations/0014_auto_20200321_2154.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/connexion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/templates/blog/test_i18n.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/migrations/0002_auto_20200322_2200.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/listee.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/crepes_bretonnes/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/liste.html" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/templates/mini_url/liste.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/mini_url/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/mini_url/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +82,8 @@
       <workItem from="1584733350048" duration="9875000" />
       <workItem from="1584799167223" duration="15201000" />
       <workItem from="1584821168184" duration="3447000" />
-      <workItem from="1584889768403" duration="12211000" />
+      <workItem from="1584889768403" duration="12495000" />
+      <workItem from="1584912844882" duration="85000" />
     </task>
     <servers />
   </component>

@@ -206,7 +206,7 @@ CACHES = {
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, '/locale/'),
 )
-
+"""
 SITE_ID = 1
 
 ADMINS = (
@@ -215,12 +215,12 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
-import re
-IGNORABLE_404_URLS = (
-    re.compile(r'\.(php|cgi)$'),
-    re.compile(r'^/phpmyadmin/'),
-    re.compile(r'^/apple-touch-icon.*\.png$'),
-    re.compile(r'^/favicon\.ico$'),
-    re.compile(r'^/robots\.txt$'),
-)
+"""
+#import re
+#IGNORABLE_404_URLS = (
+    #re.compile(r'\.(php|cgi)$'),
+    #re.compile(r'^/phpmyadmin/'),
+    #re.compile(r'^/apple-touch-icon.*\.png$'),
+    #re.compile(r'^/favicon\.ico$'),
+    #re.compile(r'^/robots\.txt$'),
+#)
