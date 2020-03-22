@@ -1,14 +1,14 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http  import  HttpResponse, Http404
 from datetime import datetime
-from django.shortcuts import render
 from .models import Article, Contact, Categorie
-from .forms import ContactForm, NouveauContactForm
+from .forms import ContactForm, NouveauContactForm, ConnexionForm
 
 from django.views.generic import TemplateView, ListView, DetailView
 
 from datetime import datetime
-
+from django.contrib.auth import logout
+from django.urls import reverse
 
 def home(request):
     """ Exemple de page non valide au niveau HTML pour que l'exemple soit concis """
@@ -203,3 +203,57 @@ def middleware2(get_response):
 def ma_vue(request):
     print("Enfin, nous arrivons dans la vue !")
     return HttpResponse("Ma réponse")
+
+from django.contrib.auth import authenticate, login
+
+def connexion(request):
+    error = False
+
+    if request.method == "POST":
+        form = ConnexionForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
+            user = authenticate(username=username, password=password)  # Nous vérifions si les données sont correctes
+            if user:  # Si l'objet renvoyé n'est pas None
+                login(request, user)  # nous connectons l'utilisateur
+            else: # sinon une erreur sera affichée
+                error = True
+    else:
+        form = ConnexionForm()
+
+    return render(request, 'blog/connexion.html', locals())
+
+
+def deconnexion(request):
+    logout(request)
+    return redirect(reverse(connexion))
+
+
+def dire_bonjour(request):
+    if request.user.is_authenticated():
+        return HttpResponse("Salut, {0} !".format(request.user.username))
+    return HttpResponse("Salut, anonyme.")
+
+
+from django.contrib.auth.decorators import login_required
+"""
+@login_required(redirect_field_name='rediriger_vers')
+def ma_vue(request):
+    # …
+"""
+from django.utils.translation import ugettext as _
+from django.utils.translation import ungettext
+
+def test_i18n(request):
+    nb_chats = 2
+    couleur = "blanc"
+    chaine = _("J'ai un %(animal)s %(col)s.") % {'animal': 'chat', 'col': couleur}
+    infos = ungettext(
+        "… et selon mes informations, vous avez %(nb)s chat %(col)s !",
+        "… et selon mes informations, vous avez %(nb)s chats %(col)ss !",
+        nb_chats) % {'nb': nb_chats, 'col': couleur}
+
+    return render(request, 'blog/test_i18n.html', locals())
+
+

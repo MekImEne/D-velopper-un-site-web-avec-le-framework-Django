@@ -21,4 +21,8 @@ urlpatterns = [
     url(r'^edition/(?P<code>\w{6})$', views.URLUpdate.as_view(), name='url_update'),
 
     url(r'^supprimer/(?P<code>\w{6})$', views.URLDelete.as_view(), name='url_delete'),
+
+    url(r'^$', views.liste, name='Urlliste'),  # Pas d'argument page précisé -> vaudra 1 par défaut
+    url(r'^(?P<page>\d+)$', views.liste, name='Urlliste'),
+
 ]

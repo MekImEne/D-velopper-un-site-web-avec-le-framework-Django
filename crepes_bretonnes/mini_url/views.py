@@ -1,17 +1,36 @@
+import string
+import random
 
-from django.http import HttpResponseRedirect
+from django.core.paginator import EmptyPage, Paginator
 from django.shortcuts import redirect, get_object_or_404, render
 from .forms import MiniURLForm
 from .models import MiniURL
 from django.views.generic import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-
+"""
 def liste(request):
-    """ Affichage des redirections """
+    # Affichage des redirections
     minis = MiniURL.objects.order_by('-nb_acces')
 
     return render(request, 'mini_url/liste.html', locals())
 
+"""
+
+def liste(request, page=1):
+    """ Affichage des redirections enregistrées """
+    minis_list = MiniURL.objects.order_by('-nb_acces')
+    paginator = Paginator(minis_list, 5)  # 5 liens par page
+
+    try:
+        # La définition de nos URL autorise comme argument « page » uniquement
+        # des entiers, nous n'avons pas à nous soucier de PageNotAnInteger
+        minis = paginator.page(page)
+    except EmptyPage:
+        # Nous vérifions toutefois que nous ne dépassons pas la limite de page
+        # Par convention, nous renvoyons la dernière page dans ce cas
+        minis = paginator.page(paginator.num_pages)
+
+    return render(request, 'mini_url/listee.html', locals())
 
 def nouveau(request):
     """ Ajout d'une redirection """
@@ -56,6 +75,15 @@ class URLUpdate(UpdateView):
         messages.success(self.request, "Votre profil a été mis à jour avec succès.")
         return HttpResponseRedirect(self.get_success_url())
 """
+
+
+def generer(self, nb_caracteres):
+    caracteres = string.ascii_letters + string.digits
+    aleatoire = [random.choice(caracteres) for _ in range(nb_caracteres)]
+
+    self.code = ''.join(aleatoire)
+
+
 class URLDelete(DeleteView):
     model = MiniURL
     context_object_name = "mini_url"
@@ -65,5 +93,9 @@ class URLDelete(DeleteView):
     def get_object(self, queryset=None):
         code = self.kwargs.get('code', None)
         return get_object_or_404(MiniURL, code=code)
+
+
+
+
 
 

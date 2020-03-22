@@ -5,7 +5,8 @@ from .models import Article
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.generic import TemplateView, ListView  # L'import a changé, attention !
-
+# On import les vues de Django, avec un nom spécifique
+from django.contrib.auth import views as auth_views
 app_name = 'blog'
 
 urlpatterns= [
@@ -35,6 +36,9 @@ urlpatterns= [
 
     url(r'^categorie/(\w+)$', views.ListeArticles.as_view()),
     url(r'^article/(?P<pk>\d+)$', views.LireArticle.as_view(), name='blog_lire'),
-
+    # url(r'^connexion$', views.connexion, name='connexion'),
+    url(r'^deconnexion$', views.deconnexion, name='deconnexion'),
+    url(r'^connexion$', auth_views.LoginView.as_view(template_name='blog/connexion.html')),
+    url(r'^test$', views.test_i18n, name='test'),
 
 ]
